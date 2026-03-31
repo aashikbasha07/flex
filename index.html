@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 4 Flex - All In One</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    .box {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container mt-4">
+
+  <h2 class="mb-4">Bootstrap 4 Flex Utilities - All In One</h2>
+
+  <!-- 1. Basic Flex Row -->
+  <h5>1. d-flex (Row)</h5>
+  <div class="d-flex bg-light p-3 mb-4">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+  </div>
+
+  <!-- 2. Flex Column -->
+  <h5>2. flex-column</h5>
+  <div class="d-flex flex-column bg-light p-3 mb-4">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Column 3</div>
+  </div>
+
+  <!-- 3. Justify Content -->
+  <h5>3. justify-content-between</h5>
+  <div class="d-flex justify-content-between bg-light p-3 mb-4">
+    <div class="box">Left</div>
+    <div class="box">Center</div>
+    <div class="box">Right</div>
+  </div>
+
+  <!-- 4. Align Items -->
+  <h5>4. align-items-center</h5>
+  <div class="d-flex align-items-center bg-light p-3 mb-4" style="height:120px;">
+    <div class="box">Center 1</div>
+    <div class="box">Center 2</div>
+  </div>
+
+  <!-- 5. Flex Wrap -->
+  <h5>5. flex-wrap</h5>
+  <div class="d-flex flex-wrap bg-light p-3 mb-4">
+    <div class="box" style="width:200px;">Wrap 1</div>
+    <div class="box" style="width:200px;">Wrap 2</div>
+    <div class="box" style="width:200px;">Wrap 3</div>
+    <div class="box" style="width:200px;">Wrap 4</div>
+  </div>
+
+  <!-- 6. Order -->
+  <h5>6. order classes</h5>
+  <div class="d-flex bg-light p-3 mb-4">
+    <div class="box order-3">Order 3</div>
+    <div class="box order-1">Order 1</div>
+    <div class="box order-2">Order 2</div>
+  </div>
+
+  <!-- 7. ml-auto -->
+  <h5>7. ml-auto</h5>
+  <div class="d-flex bg-light p-3 mb-4">
+    <div class="box">Start</div>
+    <div class="box ml-auto">End</div>
+  </div>
+
+  <!-- 8. align-self -->
+  <h5>8. align-self</h5>
+  <div class="d-flex bg-light p-3 mb-4" style="height:120px;">
+    <div class="box align-self-start">Start</div>
+    <div class="box align-self-center">Center</div>
+    <div class="box align-self-end">End</div>
+  </div>
+
+  <!-- 9. Responsive Flex -->
+  <h5>9. Responsive Flex (column on small, row on md+)</h5>
+  <div class="d-flex flex-column flex-md-row bg-light p-3 mb-4">
+    <div class="box">Responsive 1</div>
+    <div class="box">Responsive 2</div>
+    <div class="box">Responsive 3</div>
+  </div>
+
+</div>
+
+<!-- Required JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
